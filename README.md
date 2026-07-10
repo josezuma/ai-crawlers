@@ -352,7 +352,7 @@ See [examples/](examples/) for real robots.txt files built from this dataset.
 - [awesome-ai-visibility](https://github.com/josezuma/awesome-ai-visibility) — Curated list of AI visibility/GEO resources
 - [geo-audit-skill](https://github.com/josezuma/geo-audit-skill) — Agent skill for AI-search readiness auditing
 - [geo-prompts](https://github.com/josezuma/geo-prompts) — Benchmark prompts for LLM share-of-voice
-- [BrandVirality](https://brandvirality.com) — AI Visibility Agency
+- [BrandVirality](https://brandvirality.com) — SaaS for AI visibility
 
 ## License
 
