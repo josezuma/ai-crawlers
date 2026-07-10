@@ -1,5 +1,3 @@
-# .gitignore
 .DS_Store
-*.swp
 *.pyc
 __pycache__/
