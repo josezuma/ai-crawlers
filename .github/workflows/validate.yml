@@ -1,0 +1,21 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+    paths: ['crawlers.json', 'schema.json']
+  pull_request:
+    branches: [main]
+    paths: ['crawlers.json', 'schema.json']
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install jsonschema pyyaml
+      - run: python generate_readme.py --check
+      - run: python scripts/export_yaml.py && python3 -c "import yaml; yaml.safe_load(open('crawlers.yaml'))"

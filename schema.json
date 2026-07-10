@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/josezuma/ai-crawlers/main/schema.json",
+  "title": "AI Crawler Dataset",
+  "description": "Machine-readable schema for AI crawler user-agent data",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "user_agent", "purpose", "vendor", "docs_url", "status", "added"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the crawler (kebab-case)"
+      },
+      "name": {
+        "type": "string",
+        "description": "Display name of the crawler"
+      },
+      "user_agent": {
+        "type": "string",
+        "description": "User-agent string or pattern"
+      },
+      "purpose": {
+        "type": "string",
+        "enum": ["training", "search", "agent", "research", "other"],
+        "description": "Primary purpose of the crawler"
+      },
+      "vendor": {
+        "type": "string",
+        "description": "Company/organization that operates the crawler"
+      },
+      "docs_url": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL to official documentation"
+      },
+      "status": {
+        "type": "string",
+        "enum": ["active", "deprecated", "unknown"],
+        "description": "Current operational status"
+      },
+      "respects_robots_txt": {
+        "type": "boolean",
+        "description": "Whether the crawler respects robots.txt directives"
+      },
+      "robots_txt_entry": {
+        "type": "string",
+        "description": "The User-agent token to use in robots.txt"
+      },
+      "allow_recipe": {
+        "type": "string",
+        "description": "robots.txt snippet to allow this crawler"
+      },
+      "disallow_recipe": {
+        "type": "string",
+        "description": "robots.txt snippet to block this crawler"
+      },
+      "added": {
+        "type": "string",
+        "format": "date",
+        "description": "Date this entry was added (ISO 8601)"
+      },
+      "updated": {
+        "type": "string",
+        "format": "date",
+        "description": "Date this entry was last updated (ISO 8601)"
+      },
+      "notes": {
+        "type": "string",
+        "description": "Additional notes about this crawler"
+      }
+    }
+  }
+}
