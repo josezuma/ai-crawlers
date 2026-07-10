@@ -7,6 +7,8 @@
     <a href="https://github.com/josezuma/ai-crawlers"><img src="https://img.shields.io/github/stars/josezuma/ai-crawlers?style=social" alt="Stars"></a>
   </p>
   <p>by <a href="https://brandvirality.com">BrandVirality</a> — Every AI crawler in one place. Block or allow them all with one command.</p>
+
+  <p><strong>Author:</strong> <a href="https://github.com/josezuma">Jose Zuma — Expert in AI Visibility</a></p>
 </div>
 
 ---
