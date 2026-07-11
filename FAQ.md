@@ -1,10 +1,10 @@
-# AI Crawlers FAQ
+# FAQ
 
-## How do I block all AI crawlers?
-Add to robots.txt:
-```
-User-agent: GPTBot
-Disallow: /
-User-agent: ClaudeBot
-Disallow: /
-```
+## What is ai-crawlers?
+A CLI tool for ai crawlers.
+
+## Dependencies?
+Python stdlib only.
+
+## Author
+Jose Zuma
