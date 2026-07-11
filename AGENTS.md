@@ -1,7 +1,7 @@
 # ai-crawlers
 
-CLI tool for ai crawlers.
+Ai Crawlers
 
 ## For AI agents
-- Run `python3 scripts/cli.py --help`
-- Use `--json` flag for machine-readable output
+- Run `python3 scripts/ai_crawlers.py --help`
+- Use `--json` for machine-readable output

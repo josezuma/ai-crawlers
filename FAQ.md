@@ -1,7 +1,7 @@
 # FAQ
 
 ## What is ai-crawlers?
-A CLI tool for ai crawlers.
+Ai Crawlers
 
 ## Dependencies?
 Python stdlib only.
